@@ -1,39 +1,53 @@
+/* ===========================
+   RESET & BASE STYLES
+   =========================== */
+
 html {
-  font-size: 10px;
+  font-size: 20px;
   /*make background navy, text very faint blue*/
   background-color: #091326;
   color: #D3E2FF;
-}
-
-h1 {
-  font-size: 30px;
-  font-family: "EB Garamond";
-  text-align: center;
-  margin: 0;
-  padding: 20px 0;
-}
-
-img {
-  display: block;
-  margin: 0 auto;
-  max-width: 50%;
-}
-
-p {
-  font-size: 20px;
   font-family: "EB Garamond";
   line-height: 1.5;
   letter-spacing: 0.8px;
 }
 
-a {
-  color: skyblue;
+
+/* ===========================
+   SECTIONS
+   =========================== */
+
+.top_wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.headshot {
+  flex: 1;
+}
+
+.top_wrapper img {
+  width: 100%;
+  margin: 10% 10% 0 0%
+}
+
+.about {
+  flex: 2;
+  margin: 0 5%
+}
+
+h1 {
+  font-size: 30px;
+  font-family: "EB Garamond";
+  margin: 0;
+  padding: 20px 0;
 }
 
 h2 {
   font-family: "Source Code Pro", monospace;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 350;
+  letter-spacing: 1.6px;
   color: skyblue;
   text-transform: uppercase;
 }
@@ -55,3 +69,56 @@ hr {
   text-align: center; 
   color: skyblue;
 }
+
+
+
+/* ===========================
+   CONTACT
+   =========================== */
+
+a {
+  color: skyblue;
+}
+
+.contact {
+  font-family: "Source Code Pro", monospace;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+/* ====== CV, LINKEDIN LINKS ====== */
+
+.contact a {
+  outline-color: transparent;
+  text-transform: lowercase;
+  text-underline-offset: 5px;
+}
+
+.contact a:link {
+  color: blue;
+}
+
+.contact a:visited {
+  color: purple;
+}
+
+.contact a:focus {
+  text-decoration: none;
+  background: #bae498;
+}
+
+.contact a:hover {
+  text-decoration: none;
+  background: skyblue;
+}
+
+.contact a:active {
+  background: #6900ff;
+  color: #cdfeaa;
+}
+
+/* ====== EMAIL ====== */
+#email {
+  color: unset
+}
+

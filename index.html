@@ -2,8 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width"/>
-        <title> Michael Yao </title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />        <title> Michael Yao </title>
 
         <!-- insert css -->
         <link href="styles/style.css" rel="stylesheet" />
@@ -22,8 +21,31 @@
 
         <!-- #---------# BIO #---------# -->
 
-        <h1> Michael Yao </h1>
-        <img src="images/michael_on_mount_vic.jpg" alt="Photo of Michael smiling on top of a hill" />
+        <div class="top_wrapper"> 
+
+            <div class="headshot">
+                <img src="images/michael_on_mount_vic.jpg" alt="Photo of Michael smiling on top of a hill" />
+            </div>
+            
+            <div class="about">
+                
+                <h1> Michael Yao </h1>
+
+                <section class="contact"> 
+
+                    <!-- obfuscate email by loading it in javascript instead -->
+                    <a id="email" href="#">loading...</a>
+
+                    <br/>
+                    <a href="docs/michael_yao_cv.pdf">CV</a> 
+                    <a href="https://www.linkedin.com/in/michaelztyao/">LinkedIn</a> 
+                    
+                </section>
+
+            </div>
+
+        </div>
+
 
         <section class="bio">
 
@@ -37,6 +59,7 @@
 
         </p> 
         </section>
+
 
 
         <!-- #---------# PROJECTS #---------# -->
