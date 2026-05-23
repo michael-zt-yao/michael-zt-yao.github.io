@@ -12,6 +12,11 @@ html {
   letter-spacing: 0.8px;
 }
 
+.site_wrapper {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
 
 /* ===========================
    SECTIONS
@@ -20,27 +25,31 @@ html {
 .top_wrapper {
   display: flex;
   width: 100%;
+  align-items: center;
 }
 
 .headshot {
-  flex: 1;
+  max-width: 8rem;
+  min-width: 5rem;
+  align-items: center;
 }
 
 .top_wrapper img {
   width: 100%;
-  margin: 10% 10% 0 0%
+  margin-right: 10%;
 }
 
 .about {
-  flex: 2;
-  margin: 0 5%
+  margin: 0 5%;
+  flex-direction: column; /* make content inside .about also a flexbox */
+  justify-content: center;   /* centers content vertically */
 }
 
 h1 {
   font-size: 30px;
   font-family: "EB Garamond";
-  margin: 0;
-  padding: 20px 0;
+  margin: 0 0 0.5rem 0;
+  padding: 0;
 }
 
 h2 {
@@ -48,14 +57,14 @@ h2 {
   font-size: 20px;
   font-weight: 350;
   letter-spacing: 1.6px;
-  color: skyblue;
+  color: #83DDF2;
   text-transform: uppercase;
 }
 
 hr {
   border: 0px;
   border-top: 2px solid;
-  border-color: grey;
+  border-color: #1d6373;
   margin: 20px, 00px;
 }
 
@@ -67,7 +76,7 @@ hr {
   font-size: 15px; 
   font-family: "Source Code Pro", monospace;
   text-align: center; 
-  color: skyblue;
+  color: #83DDF2;
 }
 
 
@@ -77,7 +86,16 @@ hr {
    =========================== */
 
 a {
-  color: skyblue;
+  color: #83DDF2;
+}
+
+a:active {
+  background: #6900ff;
+  color:  #83DDF2;
+}
+
+a:visited {
+  color: #8039c2;
 }
 
 .contact {
@@ -94,31 +112,44 @@ a {
   text-underline-offset: 5px;
 }
 
-.contact a:link {
-  color: blue;
-}
-
 .contact a:visited {
-  color: purple;
+  color: #8039c2;
 }
 
-.contact a:focus {
-  text-decoration: none;
-  background: #bae498;
-}
-
+.contact a:focus, 
 .contact a:hover {
   text-decoration: none;
-  background: skyblue;
+  background: #83DDF2;
+  color: #091326;
 }
 
 .contact a:active {
+  text-decoration: none;
   background: #6900ff;
-  color: #cdfeaa;
+  color:  #83DDF2;
 }
 
 /* ====== EMAIL ====== */
-#email {
-  color: unset
+#email:link,
+#email:visited {
+  color: #D3E2FF;
 }
+
+#email:focus, 
+#email:hover {
+  text-decoration: none;
+  background: #D3E2FF;
+  color: #091326;
+}
+
+#email:active {
+  text-decoration: none;
+  background: #6900ff;
+  color:  #D3E2FF;
+}
+
+
+
+
+
 
