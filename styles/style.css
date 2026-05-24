@@ -3,11 +3,11 @@
    =========================== */
 
 html {
-  font-size: 20px;
+  font-size: 18px;
   /*make background navy, text very faint blue*/
   background-color: #091326;
   color: #D3E2FF;
-  font-family: "EB Garamond";
+  font-family: "EB Garamond", serif;
   line-height: 1.5;
   letter-spacing: 0.8px;
 }
@@ -15,6 +15,11 @@ html {
 .site_wrapper {
   max-width: 50rem;
   margin: 0 auto;
+  padding: 0.6rem 0.6rem;
+}
+
+p {
+  margin: 0.5rem 0;
 }
 
 
@@ -47,7 +52,8 @@ html {
 
 h1 {
   font-size: 30px;
-  font-family: "EB Garamond";
+  font-family: "EB Garamond", serif;
+  font-weight: 700, bold;
   margin: 0 0 0.5rem 0;
   padding: 0;
 }
@@ -59,27 +65,62 @@ h2 {
   letter-spacing: 1.6px;
   color: #83DDF2;
   text-transform: uppercase;
+  margin: 0;
 }
 
-hr {
-  border: 0px;
-  border-top: 2px solid;
+.projects, .writing {
+  border-top: 1px solid;
   border-color: #1d6373;
-  margin: 20px, 00px;
-}
-
-.projects, .writing, .colophon {
-  margin: 20px, 0px;
+  margin: 1.1rem 0;
+  padding: 1rem 0 0.5rem 0;
 }
 
 .colophon {
+  margin: 1rem, 0;
   font-size: 15px; 
   font-family: "Source Code Pro", monospace;
   text-align: center; 
-  color: #83DDF2;
+  color: #1d6373;
 }
 
 
+/* ===========================
+   WRITING
+   =========================== */
+
+dl {
+  padding-left: 0;
+}
+
+dt {
+  font-weight: 600;
+  font-size: 19px;
+  margin-top: 0.8rem;
+}
+
+dd {
+  margin-left: 1.5rem;
+}
+
+dd.byline {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 14px;
+  padding-left: 1rem;
+  letter-spacing: 0.5px;
+  margin-top: 0.2rem;
+}
+
+dd.description {
+ margin-top: 0.3rem;
+}
+
+dd.links {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 15px;
+  color: #83DDF2;
+  margin-top: 0.3rem;
+
+}
 
 /* ===========================
    CONTACT
@@ -129,7 +170,20 @@ a:visited {
   color:  #83DDF2;
 }
 
+/* ====== COLOPHON ====== */
+
+.colophon a:link {
+  color: #1d6373;
+}
+
+.colophon a:active {
+  text-decoration: none;
+  background: #6900ff;
+  color:  #83DDF2;
+}
+
 /* ====== EMAIL ====== */
+
 #email:link,
 #email:visited {
   color: #D3E2FF;
@@ -147,6 +201,7 @@ a:visited {
   background: #6900ff;
   color:  #D3E2FF;
 }
+
 
 
 
